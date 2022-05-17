@@ -1,0 +1,9 @@
+# Directories
+test/
+.vscode/
+node_modules/
+
+# Files
+*.test.ts
+*.tgz
+README.md

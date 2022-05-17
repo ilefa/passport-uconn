@@ -1,0 +1,39 @@
+{
+  "name": "@ilefa/passport-uconn",
+  "version": "1.0.0",
+  "author": "ILEFA Labs",
+  "license": "GPL-3.0",
+  "description": "Passport Strategy for UConn CAS Authentication",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "rm -rf dist && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ilefa/passport-uconn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ilefa/passport-uconn/issues"
+  },
+  "homepage": "https://github.com/ilefa/passport-uconn#readme",
+  "dependencies": {
+    "passport": "^0.5.2",
+    "underscore": "^1.13.3",
+    "uuid": "^8.3.2",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "@types/passport": "^1.0.7",
+    "@types/underscore": "^1.11.4",
+    "@types/uuid": "^8.3.4",
+    "@types/xml2js": "^0.4.11",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
