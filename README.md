@@ -2,7 +2,7 @@
 
 ![version badge](https://img.shields.io/badge/version-1.0.0-blue)
 
-This is a custom Passport.js authentication strategy for use on ILEFA websites.
+This is a custom Passport.js authentication strategy for integrating with UConn's SSO implementation.
 
 ## Installation
 
@@ -26,8 +26,8 @@ import passport from 'passport';
 import { Strategy } from '@ilefa/passport-uconn';
 
 passport.use(new Strategy({
-    serverBaseURL: 'https://boneyard.its.uconn.edu',
-    serviceURL: 'https://boneyard.its.uconn.edu/login',
+    serverBaseURL: 'https://endpoints.its.uconn.edu',
+    serviceURL: 'https://endpoints.its.uconn.edu/login',
     passReqToCallback: false
 }));
 
